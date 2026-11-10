@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', 'Zen Maru Gothic', sans-serif;
+    --font-body: 'Plus Jakarta Sans', 'Zen Maru Gothic', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom pulse animations for fever and ribbons */
+@keyframes fever-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.4), inset 0 0 15px rgba(244, 63, 94, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(244, 63, 94, 0.8), inset 0 0 25px rgba(244, 63, 94, 0.4);
+  }
+}
+
+.animate-fever {
+  animation: fever-glow 1.2s infinite ease-in-out;
+}

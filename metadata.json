@@ -1,0 +1,6 @@
+{
+  "name": "甜蜜擺鐘甜點塔 (Sweet Stacker)",
+  "description": "日系舒芙蕾甜點美學物理擺鐘堆疊遊戲。純 Canvas 2D 物理裁切、Web Audio 即時合成音效、道具增益與連擊狂熱機制。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
